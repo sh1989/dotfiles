@@ -10,6 +10,11 @@ set expandtab
 set shiftround
 set smarttab
 
-"== Color Column=="
+"== Color Column =="
+set ruler
 set colorcolumn=80
 highlight ColorColumn ctermbg=238
+
+"== Line Nos =="
+set number
+set relativenumber
