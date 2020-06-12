@@ -8,4 +8,8 @@
   recent = branch --sort=committerdate
 
 [rebase]
-  abbreviateCommands
+  abbreviateCommands = true
+
+[core]
+  excludesfiles = ~/.gitignore
+  pager = cat
