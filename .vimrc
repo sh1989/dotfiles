@@ -18,3 +18,7 @@ highlight ColorColumn ctermbg=238
 "== Line Nos =="
 set number
 set relativenumber
+
+"== Highlight trailing whitespace"
+exec "set listchars=tab:\uBB\uBB,trail:\uB7,nbsp:~"
+set list
