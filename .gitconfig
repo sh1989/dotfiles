@@ -7,6 +7,7 @@
   slg = lg -n 5
   recent = branch --sort=committerdate
   trash = reflog
+  showf = show --pretty="" --name-only
 
 [rebase]
   abbreviateCommands = true
