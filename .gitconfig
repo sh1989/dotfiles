@@ -9,6 +9,7 @@
   trash = reflog
   showf = show --pretty="" --name-only
   pushu = !git push -u origin $(git symbolic-ref --short HEAD)
+  pushf = push -f
 
 [rebase]
   abbreviateCommands = true
