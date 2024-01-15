@@ -2,6 +2,7 @@
   name = Sam Hogarth
 
 [alias]
+  cb = checkout -b
   whoops = commit --amend --no-edit
   lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
   slg = lg -n 5
@@ -10,6 +11,13 @@
   showf = show --pretty="" --name-only
   pushu = !git push -u origin $(git symbolic-ref --short HEAD)
   pushf = push -f
+  msg = show -q
+  lastmsg = log -1 --pretty=%B
+  yeet = pushf --no-verify
+  branches = branch -l
+
+[init]
+  defaultBranch = main
 
 [rebase]
   abbreviateCommands = true
